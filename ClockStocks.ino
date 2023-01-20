@@ -83,9 +83,6 @@ void loop() {
 
 
         String g_request = link1 + stocks[i] + api;
-        ///Serial.println(g_request);
-        
-        // Your Domain name with URL path or IP address with path
         http.begin(client, g_request.c_str());
 
     
@@ -109,13 +106,11 @@ void loop() {
           int str_len = str.length() + 1;
           char json[str_len];
           str.toCharArray(json, str_len);
-          ///Serial.println(char_array[0]);
           DeserializationError error = deserializeJson(doc, json);
           float c = doc["c"];             // You can isolate some information from the API response, default only "c" and "dp" are displayed
           float dp = doc["dp"];
           Serial.println(c);
           Serial.println(dp);
-          
           lcd.setCursor(0,1);
           lcd.print(dp);
           lcd.print("%");
