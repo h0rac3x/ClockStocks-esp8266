@@ -6,5 +6,5 @@ It uses the finnhub.io API to work.
 To use it you need to get the api, put it in the code and put the wifi credential to connect the esp to the world.
 There are comments to explain where add the api and how to add stocks (defaullt stocks are TSLA, AAPL, MSFT and META).
 
-EDIT: This was one of my first project with the esp32, made in January 2023. Basicaly my first step in this kind of stuff.
+EDIT: This was one of my first project with the esp8266, made in January 2023. Basicaly my first step in this kind of stuff.
       Not the best code in the world and for sure not impressive. Still i like it.
